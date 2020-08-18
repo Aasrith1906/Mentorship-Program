@@ -1,11 +1,13 @@
 import numpy as np
 from math import pi,asin,sin
 import lattice_utils as lu
-#import matplotlib.pyplot as plt
+
 from  mpl_toolkits.axes_grid.grid_helper_curvelinear import GridHelperCurveLinear
 from mpl_toolkits.axes_grid.axislines import Subplot
 
-'''import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
 
 def dynamic_range(Efixed,E,E_max,theta_range = [10,120],step = 10, color = 'k',showplot = True):
 
@@ -39,7 +41,6 @@ def dynamic_range(Efixed,E,E_max,theta_range = [10,120],step = 10, color = 'k',s
 
     return omega,Q
 
-'''
 def spec_twoTheta(Efixed,E,E_T,Q):
     
     if Efixed == "Ef": 
